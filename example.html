@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SecureLS Test</title>
+  <script src="securels.min.js"></script>
+</head>
+<body>
+  <script> 
+   
+      const ls = new SecureLS({});
+      ls.set('greet', 'hello');
+      document.body.textContent = ls.get('greet'); // should show "hello"
+  
+  </script>
+</body>
+</html>
